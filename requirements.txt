@@ -4,3 +4,5 @@ langchain-community
 langgraph
 langchain-openai
 langchain-core
+langgraph-checkpoint-sqlite
+aiosqlite

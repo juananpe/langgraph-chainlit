@@ -1,14 +1,37 @@
-# Welcome to Chainlit! 🚀🤖
+# Asistente IA con Memoria Persistente 🤖💾
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+¡Bienvenido! Este es un asistente de IA potenciado por **LangGraph** con memoria persistente y autenticación de usuarios.
 
-## Useful Links 🔗
+## 🌟 Características
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+- **Memoria Persistente**: Todas tus conversaciones se guardan automáticamente en una base de datos SQLite local
+- **Autenticación de Usuarios**: Cada usuario tiene su propio historial de conversación privado
+- **Búsqueda Web**: El asistente puede buscar información actualizada en internet usando Tavily
+- **Conversaciones Privadas**: Tu historial es completamente privado y está separado de otros usuarios
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+## 👤 Usuarios de Prueba
 
-## Welcome screen
+Para esta demostración, puedes iniciar sesión con cualquiera de estos usuarios:
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+- **admin** / admin123 (Administrador)
+- **maria** / guapo123 (Mikel Garcia)
+- **juan** / fe123 (Juan Pérez)
+
+## 💡 Cómo Usar
+
+1. **Inicia sesión** con uno de los usuarios de prueba
+2. **Chatea** con el asistente normalmente
+3. **Pregúntale tu nombre** después de decírselo - verás que lo recuerda
+4. **Cierra sesión y vuelve a entrar** - tu conversación seguirá ahí
+5. **Prueba con otro usuario** - cada usuario tiene su propia conversación separada
+
+## 🔒 Seguridad
+
+⚠️ **Nota**: Esta es una implementación de demostración. En producción, las contraseñas deben estar hasheadas y los usuarios deben almacenarse en una base de datos segura.
+
+## 📚 Recursos
+
+- **Documentación de Chainlit**: [docs.chainlit.io](https://docs.chainlit.io)
+- **LangGraph**: [langchain-ai.github.io/langgraph](https://langchain-ai.github.io/langgraph)
+
+¡Disfruta conversando con tu asistente personal! 🎉
