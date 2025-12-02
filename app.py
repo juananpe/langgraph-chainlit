@@ -6,12 +6,12 @@ from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import ToolNode
 from langchain_core.runnables import RunnableConfig
 from langchain_core.messages import HumanMessage
-from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_tavily import TavilySearch
 
 import chainlit as cl
 
 # Define the Tavily search tool
-tavily_search = TavilySearchResults(max_results=3)
+tavily_search = TavilySearch(max_results=3)
 tools = [tavily_search]
 
 # Set up the model (only one needed!)
@@ -73,10 +73,10 @@ async def on_message(msg: cl.Message):
     final_answer = cl.Message(content="")
     
     try:
-        # Stream the response with simplified callback handler
+        # Stream the response
         async for event in graph.astream(
             {"messages": [HumanMessage(content=msg.content)]}, 
-            config=RunnableConfig(callbacks=[cl.LangchainCallbackHandler()], **config)
+            config=RunnableConfig(**config)
         ):
             # Check if this is the final agent response
             if "agent" in event and "messages" in event["agent"]:

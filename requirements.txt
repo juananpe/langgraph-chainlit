@@ -1,6 +1,6 @@
 python-dotenv
 chainlit
-langchain-community
+langchain-tavily
 langgraph
 langchain-openai
 langchain
