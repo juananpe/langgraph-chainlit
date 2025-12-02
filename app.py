@@ -4,7 +4,7 @@ load_dotenv()
 from typing import Literal
 from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import ToolNode
-from langchain.schema.runnable.config import RunnableConfig
+from langchain_core.runnables import RunnableConfig
 from langchain_core.messages import HumanMessage
 from langchain_community.tools.tavily_search import TavilySearchResults
 

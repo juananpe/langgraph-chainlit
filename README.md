@@ -14,9 +14,12 @@ LangGraph is a conversational AI framework designed to facilitate the creation o
 
 To get started with LangGraph, follow these steps:
 
-1. Install the required dependencies by running `pip install -r requirements.txt`
+0. 
+    - uv venv
+    - source .venv/bin/activate # On Windows use `.venv\Scripts\activate`
+1. Install the required dependencies by running `uv pip install -r requirements.txt`
 2. Set up your environment variables by creating a `.env` file with the necessary API keys and configuration
-3. Run the application using `chainlit run app.py`
+3. Run the application using `python -m chainlit run app.py`
 4. Interact with the system by sending messages to the chat interface (ask about the weather in San Francisco, for example)
 
 ## Configuration
